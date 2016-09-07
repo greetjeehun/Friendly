@@ -29,47 +29,74 @@
 @media screen and (max-width: 499px) {
 
 	.top {
-		font-size: 50px;
+		font-size: 30px;
 		font-family: 'Homemade Apple', cursive;
 		max-width: 500px;
     	margin: auto; 
     	text-align: center;
+    	position: relative;
 	}
 
 	.squares {
 	 	max-width: 500px;
 	 	height: 320px;
-	 	margin: 0 auto; 
+	 	margin: 10px 0 10px 0;
 	  	border: 5px black solid;
 		background-color: white;
+		transition: transform 0.5s;
+		-webkit- transition: -webkit-transform 0.5s;
 	}
 
 	body {
 		background-color: gray;
 	}
+
+	.squares:hover {
+		transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+	}
+
+	.hamburger {
+		width: 40px;
+		position: relative;
+	}
+
 }
 
 /* PC */	
 @media screen and (min-width: 500px) {
 
 	.top {
-		font-size: 50px;
+		font-size: 15px;
 		font-family: 'Homemade Apple', cursive;
-		max-width: 500px;
-    	margin: auto; 
-    	text-align: center;
-    	position: fixed;
+		position: fixed;
+  		top: 0;
+  		left: 0;
+		height: 100px;
+		background-color: #66ffff;
+		width: 100%;
+		z-index: 1;
 	}
 
 	.squares {
-		display: inline-block;
-	 	width: 500px;
+		width: 500px;
 	 	height: 320px;
 	  	border: 5px black solid;
 		background-color: white;
+		margin: 10px;
+		display: inline-block;
 		}
 
 	body {
 		background-color: #ffff99;
+	}
+
+	.firstline {
+ 		margin-top: 100px;
+	}
+
+	.hamburger {
+		width: 00px;
+		position: relative;
 	}
 }
